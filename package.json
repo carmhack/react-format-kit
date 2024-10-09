@@ -1,0 +1,33 @@
+{
+  "name": "react-format-kit",
+  "version": "0.1.0",
+  "description": "A React component for formatted dates with multiple options.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "keywords": [
+    "react",
+    "react-component",
+    "formatter",
+    "intl",
+    "internationalization",
+    "i18n",
+    "date-format",
+    "number-format",
+    "currency-format",
+    "time-format",
+    "unit-format"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "Adriano Grimaldi",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.3.11",
+    "typescript": "^5.6.3"
+  }
+}

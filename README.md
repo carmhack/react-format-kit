@@ -44,11 +44,6 @@ const App = () => (
 );
 ```
 
-**Props:**
-- date:  it must be a string that Date.parse() can interpret or a Date object set via JavaScript
-- format: 'iso' | 'numeric' | 'human' | 'human-long''
-- locale: valid locale string (e.g. 'en-US', 'fr-FR', 'it-IT', etc.)
-
 ### Props
 
 The `FormatDate` component accepts the following props:

@@ -1,6 +1,8 @@
 # React Format Kit
 A TypeScript-based React component for formatting various data types such as dates, numbers, currencies and units with support for multiple formats and localization. Powered by the native `Intl` API, this library simplifies the process of displaying localized data formats across your React applications.
 
+Package: [Go to npm](https://www.npmjs.com/package/react-format-kit)
+
 ## Features
 
 - 📅 **Date Formatting**: Supports multiple date formats (ISO, numeric, human-readable).

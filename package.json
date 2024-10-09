@@ -1,6 +1,6 @@
 {
   "name": "react-format-kit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A React component library for formatted dates with multiple options.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

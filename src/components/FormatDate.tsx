@@ -1,9 +1,10 @@
 import React from 'react';
 import { getValidLocale } from '../utils/locale';
 
+type FormatDateType = 'iso' | 'numeric' | 'human' | 'human-long';
 type FormatDateProps = {
   date?: Date | string,
-  format?: 'iso' | 'numeric' | 'human' | 'human-long',
+  format?: FormatDateType,
   locale?: string,
 }
 

@@ -46,7 +46,7 @@ const FormatDate: React.FC<FormatDateProps> = ({
   const validLocale = Intl.DateTimeFormat.supportedLocalesOf([locale]).length > 0 ? locale : 'en-US';
   const options = getDateTimeFormatOptions(format);
 
-  return <p>{new Intl.DateTimeFormat(validLocale, options).format(parsedDate)}</p>
+  return <time>{new Intl.DateTimeFormat(validLocale, options).format(parsedDate)}</time>
 }
 
 export default FormatDate;

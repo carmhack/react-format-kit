@@ -43,12 +43,21 @@ describe('[FormatDate]', () => {
     expect(formattedDateElement.textContent).toBe(expectedDate);
   });
 
-  test('renders the date in numeric format', () => {
+  test('renders the date in numeric format with default locale', () => {
     const testDate = new Date('1991-10-09T10:00:00Z');
     render(<FormatDate date={testDate} format="numeric" />);
     
     const formattedDateElement = screen.getByRole('time');
     const expectedDate = "09/10/1991";
+    expect(formattedDateElement.textContent).toBe(expectedDate);
+  });
+
+  test('renders the date in numeric format with en-US locale', () => {
+    const testDate = new Date('1991-10-09T10:00:00Z');
+    render(<FormatDate date={testDate} format="numeric" locale="en-US" />);
+    
+    const formattedDateElement = screen.getByRole('time');
+    const expectedDate = "10/09/1991";
     expect(formattedDateElement.textContent).toBe(expectedDate);
   });
 });

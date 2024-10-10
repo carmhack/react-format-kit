@@ -32,5 +32,10 @@ describe('[FormatNumber]', () => {
     expect(formattedElement).toBeInTheDocument();
   });
 
-  
+  test('renders number with fractions', () => {
+    render(<FormatNumber value={10000.98} minimumFractionDigits={1} maximumFractionDigits={2} locale='it-IT' />);
+
+    const formattedElement = screen.getByText('10.000,98');
+    expect(formattedElement).toBeInTheDocument();
+  });
 });

@@ -1,7 +1,7 @@
 import React from 'react';
 import { getValidLocale } from '../utils/locale';
 
-type FormatDateType = 'iso' | 'numeric' | 'human' | 'human-long';
+type FormatDateType = 'iso' | 'numeric' | 'month' | 'day' | 'human' | 'human-long';
 type FormatDateProps = {
   date?: Date | string,
   format?: FormatDateType,
@@ -14,6 +14,16 @@ const getDateTimeFormatOptions = (format: string): Intl.DateTimeFormatOptions =>
       return {
         year: 'numeric',
         month: '2-digit',
+        day: '2-digit',
+      };
+    case 'month':
+      return {
+        year: 'numeric',
+        month: 'long',
+      };
+    case 'day':
+      return {
+        month: 'long',
         day: '2-digit',
       };
     case 'human-long':

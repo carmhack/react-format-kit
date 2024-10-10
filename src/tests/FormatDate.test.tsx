@@ -60,4 +60,22 @@ describe('[FormatDate]', () => {
     const expectedDate = "10/09/1991";
     expect(formattedDateElement.textContent).toBe(expectedDate);
   });
+
+  test('renders the date in month format with en-US locale', () => {
+    const testDate = new Date('1991-10-09T10:00:00Z');
+    render(<FormatDate date={testDate} format="month" locale="en-US" />);
+    
+    const formattedDateElement = screen.getByRole('time');
+    const expectedDate = "October 1991";
+    expect(formattedDateElement.textContent).toBe(expectedDate);
+  });
+
+  test('renders the date in day format with en-US locale', () => {
+    const testDate = new Date('1991-10-09T10:00:00Z');
+    render(<FormatDate date={testDate} format="day" locale="en-US" />);
+    
+    const formattedDateElement = screen.getByRole('time');
+    const expectedDate = "October 09";
+    expect(formattedDateElement.textContent).toBe(expectedDate);
+  });
 });

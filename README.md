@@ -6,7 +6,7 @@ Package: [Go to npm](https://www.npmjs.com/package/react-format-kit)
 ## Features
 
 - 📅 **Date Formatting**: Supports multiple date formats (ISO, numeric, human-readable).
-- 💰 **Number and Currency Formatting**: (TODO) Easily format numbers and currencies with localization support.
+- 💰 **Number and Currency Formatting**: Easily format numbers, percentages and currencies with localization support.
 - 📏 **Unit Formatting**: (TODO) Format units of measure such as meters, kilometers, and more.
 - 🌍 **Localization**: Full locale support using the `Intl` API for internationalized applications.
 - 🔧 **TypeScript**: Written in TypeScript with full type declarations, providing autocompletion and type safety.
@@ -47,8 +47,6 @@ const App = () => (
 );
 ```
 
-### Props
-
 The `FormatDate` component accepts the following props:
 
 | Prop      | Type   | Default   | Description   |
@@ -82,8 +80,6 @@ const App = () => (
 );
 ```
 
-### Props
-
 The `FormatNumber` component accepts the following props:
 
 | Prop      | Type   | Default   | Description   |
@@ -115,8 +111,6 @@ const App = () => (
   </div>
 );
 ```
-
-### Props
 
 The `FormatCurrency` component accepts the following props:
 
@@ -150,8 +144,6 @@ const App = () => (
   </div>
 );
 ```
-
-### Props
 
 The `FormatPercentage` component accepts the following props:
 

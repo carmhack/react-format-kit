@@ -1,12 +1,13 @@
 {
   "compilerOptions": {
     "moduleResolution": "node",
-    "target": "ES6",
+    "target": "ES2016",
     "module": "ESNext",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "declaration": true,
     "outDir": "./dist",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "types": ["@testing-library/jest-dom"]
   },
   "include": ["src"]
 }

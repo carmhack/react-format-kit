@@ -1,4 +1,5 @@
 import React from 'react';
+import { getValidLocale } from '../utils/locale';
 
 type FormatDateProps = {
   date?: Date | string,
@@ -35,7 +36,7 @@ const getDateTimeFormatOptions = (format: string): Intl.DateTimeFormatOptions =>
 const FormatDate: React.FC<FormatDateProps> = ({
   date = new Date(),
   format = 'human',
-  locale = 'en-US'
+  locale,
 }) => {
   const parsedDate = typeof date === 'string' ? new Date(Date.parse(date)) : date;
 
@@ -43,7 +44,7 @@ const FormatDate: React.FC<FormatDateProps> = ({
     return <p>{parsedDate.toISOString()}</p>
   }
 
-  const validLocale = Intl.DateTimeFormat.supportedLocalesOf([locale]).length > 0 ? locale : 'en-US';
+  const validLocale = getValidLocale(locale);
   const options = getDateTimeFormatOptions(format);
 
   return <time>{new Intl.DateTimeFormat(validLocale, options).format(parsedDate)}</time>

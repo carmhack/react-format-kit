@@ -2,6 +2,11 @@
   "name": "react-format-kit",
   "version": "0.1.1",
   "description": "A TypeScript-based React component for formatting various data types such as dates, numbers, currencies and units with support for multiple formats and localization.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/carmhack/react-format-kit.git"
+  },
+  "homepage": "https://github.com/carmhack/react-format-kit#readme",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "keywords": [

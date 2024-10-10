@@ -5,8 +5,8 @@ Package: [Go to npm](https://www.npmjs.com/package/react-format-kit)
 
 ## Features
 
-- 📅 **Date Formatting**: Supports multiple date formats (ISO, numeric, human-readable).
-- 💰 **Number and Currency Formatting**: Easily format numbers, percentages and currencies with localization support.
+- 📅 **Date Formatting**: Supports multiple date formats (ISO, numeric, month, day, human-readable).
+- 💰 **Number Formatting**: Easily format numbers, percentages and currencies.
 - 📏 **Unit Formatting**: (TODO) Format units of measure such as meters, kilometers, and more.
 - 🌍 **Localization**: Full locale support using the `Intl` API for internationalized applications.
 - 🔧 **TypeScript**: Written in TypeScript with full type declarations, providing autocompletion and type safety.
@@ -52,8 +52,8 @@ The `FormatDate` component accepts the following props:
 | Prop      | Type   | Default   | Description   |
 |-----------|---------------|----------|------------|
 | `date` | `Date` or `string` | `new Date()` | The date to format. |
-| `format` | `iso \ numeric \ human \ human-long` | `human`| The format to display the date: ISO format, numeric, human-readable, or long human-readable format. |
-| `locale` | `string` | navigator.language OR `'en-US'` | The locale to use for formatting the date (e.g., `'en-US'`, `'fr-FR'`).  |
+| `format` | `iso \ numeric \ month \ day \ human \ human-long` | `human`| The format to display the date. |
+| `locale` | `string` | navigator.language OR `'en-US'` | The locale to use for formatting the date.  |
 
 ### Format Number
 
